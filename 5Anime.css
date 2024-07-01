@@ -1,0 +1,547 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-bx;
+    color:rgb(253, 251, 248); 
+    font-family: 'montserrat';
+
+}
+
+#nav{
+    height:110px;
+    width:100%;
+
+    display:flex;
+    position:fixed;
+    text-align:center;
+    gap:10px;
+    z-index: 99;
+}
+#cursor{
+    height:200px;
+    width:200px;
+    background-color:#b5da11e4;
+    border-radius:50%;
+    position:fixed;
+    filter:blur(34px)
+}
+
+#cursor-blur{
+    height:200px;
+    width:200px;
+    background-color:#a5ec0ce7;
+    border-radius:50%;
+    position:fixed;
+    filter:blur(34px)
+}
+#nav img{
+    height:90px;
+    width:74px;
+    padding:14px;
+}
+#nav h4{
+    font-size:16px;
+    width:124px;
+    margin-top:10%;
+    font-family:caveat;
+    text-decoration:none;
+    padding:14px;
+    text-transform: uppercase;
+    border-radius:50%;
+   
+}
+#search{
+    padding:28px;
+    margin-left:170px;
+}
+
+#search i{
+    height:100px;
+    width:344px;
+    background-color:red;
+}
+.video{
+    height:100%;
+    width:100%;
+    position:fixed;
+    object-fit:cover;
+    z-index: -1;
+}
+.video1{
+   height:100vh;
+   width:100%;
+    background-size:cover;
+    object-fit:cover;
+    position:fixed;
+}
+#main{
+ position:relative;
+ background-color: rgba(8, 7, 7, 0.049);
+}
+#page{
+    height:100vh;
+    width:100%;
+    display:flex;
+    position:relative;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    z-index: 10;
+    
+ 
+}
+.video{
+ background-size:cover ;
+}
+#page #arrow {
+    height: 150px;
+    width: 150px;
+    background-color: transparent;
+    border: 2px solid #95c11e;
+    position: absolute;
+    display: flex;
+    left: -2%;
+    bottom: 0%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+  }
+  #page #arrow i {
+    font-size: 90px;
+    font-weight: 100;
+  }
+  #page #arrow:hover {
+    scale: 0.4;
+    background-color: #95c11e;
+  }
+#page h1{
+    font-size:75px;
+    font-family: " Arial";
+    font-weight:900px;
+    color:white;
+    margin-top:10px;
+    position: relative;
+
+}
+/*
+#page h1:before{
+    content:"EAT . SLEEP . DANCE REPEAT";
+    position:absolute;
+    font-family: " Arial";
+    color:rgba(224, 218, 218, 0.875);
+    left:45%;
+    top:-4px;
+    -webkit-text-stroke:1px #5ab059 ;
+
+}
+*/ 
+#page h2{
+    font-size:20px;
+    font-weight:567px;
+    padding:10px;
+}
+#page2{
+    height:260vh;
+    width:100%;
+    z-index: 10;
+}
+.scroller{
+    white-space: nowrap;
+    overflow-x:auto;
+    overflow-y: hidden;
+    position:relative;
+    z-index: 10;
+}
+
+.scroller::-webkit-scrollbar{
+    display: none;
+}
+
+.scroller-in{
+    display:inline-block;
+    white-space: nowrap;
+    animation: scrollh4;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+.scroller h4{
+    font-size:90px;
+    display:inline-block;
+    font-weight:900;
+    font-family:gilroy;
+    margin-right:10px;
+    margin:10px;
+    transition: all linear  0.5s;
+    color:transparent;
+    -webkit-text-stroke: 2px rgba(145, 255, 0, 0.576);
+    
+} 
+
+@keyframes scrollh4{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+} 
+
+.scroller h4:hover{
+    color:#95c11e;
+   
+    }
+    
+.img1{
+    height:228px;
+    width:314px;
+    background-size:cover;
+    border-radius:15px;
+    margin-right:23px;
+    object-fit:cover;
+}
+#about-us{
+    height:40vh;
+    width:100%;
+    margin-top:15%;
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    padding:10px;
+
+}
+#aboutus h1{
+    font-size:34px;
+    font-weight:bold;
+}
+#aboutus p{
+    font-size:16px;
+    justify-content: center;
+    text-align:center;
+    position: relative;
+    z-index: 10;
+}
+.card-container{
+    height:345px;
+     margin-top:15%;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    text-align:center;
+   
+}
+.card {
+    height: 96%;
+    width: 29%;
+    /* background-color: blue; */
+    border-radius: 12px;
+    background-position: center;
+    overflow: hidden;
+    margin-left:30px;
+    margin-right:30px;
+    text-align:center;
+    transition: all ease 8s;
+    overflow: hidden;
+    transition: all ease 0.8s;
+  }
+
+#card1{
+    background-image:url("https://static.toiimg.com/thumb/msid-68136887,width-400,resizemode-4/68136887.jpg")
+}
+#card2{
+    background-image:url("https://industrydanceawards.com/upload/kartv-dance-awards/2022/nominees/1355-upload_20220813142830169_96c96e4eebc44deeb75b642c1c2914ed.jpg?width=480&height=360&mode=crop")
+}
+#card3{
+    background-image:url("https://www.spinarella.com/wp-content/uploads/2018/03/World-Hip-Hop-Dance-Championship.jpg")
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #95c11e;
+    padding-top: 10px;
+    opacity: 0;
+    transition: all ease 0.8s;
+  }
+
+  .overlay h4 {
+    color: #000;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 45px;
+    font-weight: 800;
+  }
+
+.overlay p{
+    color:black;
+    font-size:14px;
+}
+
+ .card:hover .overlay{
+    opacity:1
+}
+.card:hover{
+    transform: rotate3d(-1,1,1,30deg);
+  }
+  .dot-container{
+    margin-top:105px;
+    height:240px;
+    width:100%;
+    background:linear-gradient(to left bottom,rgba(108, 232, 6, 0.798),rgba(238, 255, 0, 0.923));
+    display:flex;
+    justify-content: space-between;
+    text-align:center;
+  }
+  .dot-head{
+    font-size:20px;
+    text-align:center;
+    color:black;
+    padding:20px;
+    margin-top:40px;
+    font-weight: 900 bold;
+  }
+  
+  #page3{
+    height:120vh;
+    width:100%;
+    background-color:black;
+    display:flex;
+    text-align:center;
+    justify-content: center;
+    position:relative;
+  }
+  #page3>p{
+    margin-top:234px;
+    font-size:24px;
+    width:900;
+    color:white;
+    text-align:center;
+    width:67%;
+    line-height:34px;
+  }
+#page3 img{
+    position:absolute;
+    height:90px;
+    width:90px;
+}
+#left{
+    right:80%;
+    top:14%;
+}
+#right{
+    left:80%;
+    top:55%;
+}
+#page4{
+    height:60vh;
+    width:100%;
+     display:flex;
+     justify-content: space-between;
+     text-align:center;
+    
+}
+#element{
+       margin-top:45%;
+        height:70%;
+        width: 26%;
+        overflow: hidden;
+        border-radius:14px;
+        position: relative;
+        padding:15px;
+        margin:20px;
+      }
+    
+#element h2{
+  height: 100%;
+  width: 100%;
+  background-color: #95c11e;
+  display: flex;
+  font-size:64px;
+  color: #000;
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+  font-size:40px;
+  position: absolute;
+  z-index: 10;
+  transition: all ease 0.5s;
+        
+    }
+
+#element img{
+    height:100%;
+    width:100%;
+    background-size:cover;
+}
+#element h2:hover{
+    color:white;
+    background-color: transparent;
+}
+#anotherh1{
+    bottom:18%;
+    font-size:50px;
+    color:black transparent;
+    font-weight:899;
+    margin-left:300px;
+    align-items:center;
+  position:absolute;
+   -webkit-text-stroke:1px white;
+ 
+}
+.footer{
+    height:40vh;
+    width:100%;
+    background:linear-gradient(to left bottom,rgba(197, 240, 44, 0.819),rgba(45, 128, 0, 0.917));
+    margin-top:4%;
+}
+.footer h4{
+    font-size:14px;
+      text-align:center;
+      justify-content: center;
+      padding:45px;
+      width:440px;
+      margin-left:34%;
+}
+
+.footericon{
+    height:44px;
+    width:420px;
+    display:flex;
+    justify-content: space-between;
+    margin-left:48%;
+    align-items:center;
+   
+}
+.footericon i{
+font-size:50px;
+
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .card1 {
+    width: 45px;
+    height: 45px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .instagram {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #cc39a4;
+  }
+  
+  .card2 {
+    width: 45px;
+    height: 45px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .facebook {
+    margin-top: 1.5em;
+    margin-left: -.9em;
+    fill: #03A9F4;
+  }
+  
+  .card3 {
+    width: 45px;
+    height: 45px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .whatsapp {
+    margin-top: -.6em;
+    margin-left: 1.2em;
+    fill: #00ff00;
+  }
+  
+  .card4 {
+    width: 45px;
+    height: 45px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .gmail {
+    margin-top: -.9em;
+    margin-left: -1.2em;
+    fill: #f14336;
+  }
+  
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+  }
+  
+  .card1:hover .instagram {
+    fill: white;
+  }
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #1877f2;
+  }
+  
+  .card2:hover .facebook {
+    fill: white;
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #00ff00;
+  }
+  
+  .card3:hover .whatsapp {
+    fill: white;
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #FF0004;
+  }
+  
+  .card4:hover .gmail {
+    fill: white;
+  }
